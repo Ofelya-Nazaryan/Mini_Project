@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #b_tag{
+            color: crimson;
+            font-size: 40px;
+        }
+        .p_tag{
+            text-align: center;
+        }
+    </style>
+</head>
+<body >
+<h1>H1 text</h1>
+<h2>H2 text</h2>
+<h3>H3 text</h3>
+<h4>H4 text</h4>
+<h5>H5 text</h5>
+<h6>H6 text</h6>
+<i style="color:orange;  font-size: 37px;">italic text</i> <br>
+<b id="b_tag">bold text</b>
+<p class="p_tag">paragraph 1</p>
+<p class="p_tag"> paragraph 2</p>
+<div id="first_div">
+    div 1
+</div>
+<div>
+    div 2
+</div>
+<div>
+    div 3
+</div>
+
+<label for="textInput1"> Text input</label><input id="textInput1" type="text"/><br>
+<label for="passwordInput"> Password input</label><input id="passwordInput" type="password"/><br>
+<label for="numberInput"> Number input</label><input id="numberInput" type="number"/><br>
+<label for="fileInput"> Choose file</label><input id="fileInput" type="file"/><br>
+<label for="buttonInput"> Button input</label>
+<input style="color: orange; background-color: aqua" id="buttonInput" value="OK" type="button"/><br>
+<button onclick="myFunction()" onmouseover="mouseHover()">Run js</button>
+
+<a href="https://google.com" target="_blank">Google</a>
+<img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg">
+</body>
+<script>
+    function myFunction(){
+        let input1 = document.getElementById("textInput1").value
+        console.log("Poxos Petros");
+        let excep = 5/0;
+        console.log(excep)
+        let passElement = document.getElementById("passwordInput")
+        passElement.hidden=true;
+        alert("Hello world :"+input1);
+    }
+
+    function mouseHover(){
+        alert("uraaa")
+    }
+</script>
+</html>
